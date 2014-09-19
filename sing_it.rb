@@ -3,7 +3,7 @@ def after_bundle
   begin
     super
   rescue NoMethodError => e
-    say "You'll probably need to manually run the command below on your own until Rails 4.2 comes out.", [:red, :on_white, :bold]
+    say "If the command below fails, you'll have to run it on your own until Rails 4.2 comes out.", [:red, :on_white, :bold]
     yield
   end
 end
@@ -47,10 +47,8 @@ web:    bundle exec rails s
 guard:  bundle exec guard
 END
 after_bundle do
-  run 'bundle exec guard init livereload'
-  run 'bundle exec guard init minitest'
+  run 'bundle exec guard init'
 end
-#TODO: run integration tests when anything changes (including views, css or javascript)
 
 # kick-ass testing tools
 gem_group :test do
