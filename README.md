@@ -3,5 +3,7 @@
 ## Usage
 
 ```
-rails new your_project_name -m "https://raw.githubusercontent.com/iamsolarpowered/my_rails_is_bigger_than_your_rails/master/sing_it.rb"
+$ rails new your_project_name -m "https://raw.githubusercontent.com/iamsolarpowered/my_rails_is_bigger_than_your_rails/master/sing_it.rb"
+$ cd your_project_name
+$ foreman start
 ```
