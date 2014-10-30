@@ -1,0 +1,4 @@
+require "my_rails_is_bigger_than_your_rails/engine"
+
+module MyRailsIsBiggerThanYourRails
+end
